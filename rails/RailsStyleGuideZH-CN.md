@@ -1,6 +1,6 @@
-# Prelude
+# 序幕
 
-> Role models are important. <br/>
+> 榜样很重要 <br/>
 > -- Officer Alex J. Murphy / RoboCop
 
 The goal of this guide is to present a set of best practices and style
