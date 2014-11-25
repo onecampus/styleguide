@@ -37,3 +37,6 @@ we weren't trying to write it.
 
 ### 小提示
 * 使用 fix, add, change 而不是 fixed, added, changed
+
+### 其他公司
+* [jquery](http://contribute.jquery.org/commits-and-pull-requests/)
