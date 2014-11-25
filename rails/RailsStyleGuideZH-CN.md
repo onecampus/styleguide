@@ -6,22 +6,21 @@
 The goal of this guide is to present a set of best practices and style
 prescriptions for Ruby on Rails 4 development. It's a
 complementary guide to the already existing community-driven
-[Ruby coding style guide](https://github.com/bbatsov/ruby-style-guide).
+[Ruby编码规范](https://github.com/bbatsov/ruby-style-guide).
 
-Some of the advice here is applicable only to Rails 4.0+.
+一些 advice 只适用于 Rails 4.0+.
 
-You can generate a PDF or an HTML copy of this guide using
-[Transmuter](https://github.com/TechnoGate/transmuter).
+你可以使用 [Transmuter](https://github.com/TechnoGate/transmuter) 来生产 PDF 或者 HTML 文档.
 
-Translations of the guide are available in the following languages:
+本指南有以下翻译版本:
 
-* [Chinese Simplified](https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md)
-* [Chinese Traditional](https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhTW.md)
+* [中文](https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md)
+* [中文繁体](https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhTW.md)
 * [Russian](https://github.com/arbox/rails-style-guide/blob/master/README-ruRU.md)
 * [Turkish](https://github.com/tolgaavci/rails-style-guide/blob/master/README-trTR.md)
-* [Japanese](https://github.com/satour/rails-style-guide/blob/master/README-jaJA.md)
+* [日语](https://github.com/satour/rails-style-guide/blob/master/README-jaJA.md)
 
-# The Rails Style Guide
+# Rails 编码规范
 
 This Rails style guide recommends best practices so that real-world Rails
 programmers can write code that can be maintained by other real-world Rails
@@ -39,26 +38,25 @@ extensive career as a professional software engineer, feedback and suggestions
 from members of the Rails community and various highly regarded Rails
 programming resources.
 
-## Table of Contents
+## 目录
 
-* [Configuration](#configuration)
-* [Routing](#routing)
-* [Controllers](#controllers)
-* [Models](#models)
+* [配置](#configuration)
+* [路由](#routing)
+* [控制器](#controllers)
+* [模型](#models)
 * [Migrations](#migrations)
-* [Views](#views)
-* [Internationalization](#internationalization)
+* [视图](#views)
+* [国际化](#internationalization)
 * [Assets](#assets)
-* [Mailers](#mailers)
+* [邮件](#mailers)
 * [Bundler](#bundler)
 * [Flawed Gems](#flawed-gems)
 * [Managing processes](#managing-processes)
 
-## Configuration
+## 配置
 
 * <a name="config-initializers"></a>
-  Put custom initialization code in `config/initializers`. The code in
-  initializers executes on application startup.
+  把自定义的初始化文件放到 `config/initializers` 下. initializers 下的文件在应用启动时自动执行.
 <sup>[[link](#config-initializers)]</sup>
 
 * <a name="gem-initializers"></a>
@@ -90,11 +88,10 @@ programming resources.
   `production` one.
 <sup>[[link](#staging-like-prod)]</sup>
 
-## Routing
+## 路由
 
 * <a name="member-collection-routes"></a>
-  When you need to add more actions to a RESTful resource (do you really need
-  them at all?) use `member` and `collection` routes.
+  当你需要添加更多的控制器方法到 RESTful resource 的时候 (你真的需要他们吗?) 使用 `member` 和 `collection` routes.
 <sup>[[link](#member-collection-routes)]</sup>
 
   ```Ruby
@@ -184,7 +181,7 @@ programming resources.
   Don't use `match` to define any routes unless there is need to map multiple request types among `[:get, :post, :patch, :put, :delete]` to a single action using `:via` option.
 <sup>[[link](#no-match-routes)]</sup>
 
-## Controllers
+## 控制器
 
 * <a name="skinny-controllers"></a>
   Keep the controllers skinny - they should only retrieve data for the view
@@ -201,7 +198,7 @@ programming resources.
   Share no more than two instance variables between a controller and a view.
 <sup>[[link](#shared-instance-variables)]</sup>
 
-## Models
+## 模型
 
 * <a name="model-classes"></a>
   Introduce non-ActiveRecord model classes freely.
