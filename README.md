@@ -2,19 +2,19 @@
 
 ### html_css
 
-> Form from (http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+> Frok from (http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
 
 ### javascript
 
-> Form from (http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+> Frok from (http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 
 ### java
 
-> Form from (http://google-styleguide.googlecode.com/svn/trunk/javaguide.html)
+> Frok from (http://google-styleguide.googlecode.com/svn/trunk/javaguide.html)
 
 ### ruby
 
-> Form from (https://github.com/bbatsov/ruby-style-guide)
+> Frok from (https://github.com/bbatsov/ruby-style-guide)
 
 ### rails
 
